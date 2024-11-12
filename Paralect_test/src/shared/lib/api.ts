@@ -2,6 +2,7 @@ import { JobSchema } from "./shemas";
 
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
+
 export const getAllJobs = async () => {
     const jobs = await fetch(`${backendUrl}/getAllJobs`, {method: "GET"});
 
